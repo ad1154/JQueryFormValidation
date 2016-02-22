@@ -1,0 +1,41 @@
+.column-left{ float: left; width: 33%; padding-top: 5px; }
+		.column-right{ float: right; width: 33%; padding-top: 5px;}
+		.column-center{ display: inline-block; width: 33%; padding-top: 5px;}
+		
+		.column-one{ float: left; padding: 5px 5px 5px 5px;}
+		.column-two{ float: left; padding: 5px 5px 5px 5px;}
+		.column-three{ float: left; padding: 5px 5px 5px 5px;}
+		.column-four{ display: inline-block;  padding: 5px 5px 5px 5px;}
+		.column {float; left;}
+		
+				
+		.error{
+			color: red;
+			margin-left: 10px;
+			display: inline-block;
+		}
+		
+		#userinfo label{
+			display: inline-block;
+			width: 100px;
+			text-align: right;
+		}
+		
+		#userinfo div{
+			margin-top: 0.5em;
+		}
+		
+		textarea{
+			vertical-align: top;
+			height: 5em;
+		}
+		
+		#userinfo label { 
+		padding-left:10px;
+		width:125px;
+		display:inline-block;
+		}
+		
+		.listselect {
+			width: 200px;
+		}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script type='text/javascript' src='jquery.min.js'></script>
+		<script src="index.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+		<div id="form">
+			<fieldset>
+				 <legend>User Information:</legend>
+				<div class="column-left">
+					<div>
+						<label for="userinfo_title">Title</label>
+						<select id= "userinfo_title" name="title">
+						  <ul>
+							  <option selected value="none">Select</option>
+							  <option value="Mr">Mr</option>
+							  <option value="Mrs">Mrs</option>
+						  </ul>
+						</select>
+					</div>
+				</div>
+				<div class="column-center">
+					<div>
+						<label for="userinfo_firstname">First Name:</label>
+						<input type="text" id="userinfo_firstname" name="firstname"></input>
+					</div>
+					<div style="padding-top: 5px;">
+						  <label for="male">Gender:</label>
+						  <input id="male" type="radio" name="gender" value="male">Male</input>
+						  <input id="female" type="radio" name="gender" value="female">Female</input>
+						  <span id="genderValidate" />
+					</div>
+				</div>
+				<div class="column-right">
+					<div>
+						<label for="userinfo_lastname">Last Name:</label>
+						<input type="text" id="userinfo_lastname" name="lastname"></input>
+					</div>
+					<div style="padding-top: 5px;">
+						  <label for="userinfo_languages">Languages Known:</label>
+						  <input id="userinfo_languages" type="checkbox" name="languages" value="english">English</input>
+						  <input type="checkbox" name="languages" value="spanish">Spanish</input>
+						  <input type="checkbox" name="languages" value="french">French</input>
+						  <span id="langValidate" />
+					</div>
+				</div>	
+			</fieldset>
+			<fieldset>
+				 <legend>Address:</legend>
+				<div>
+					<label for="userinfo_address">Address:</label>
+					<textarea id="userinfo_address" name="address"></textarea>
+				</div>						
+				<div class="column-one">
+					<label for="userinfo_state">State:</label>
+					<select id="userinfo_state" name="state">
+						  <option selected value="none">Select</option>
+						  <option value="CA">CA</option>
+						  <option value="IL">IL</option>
+					</select> 
+				</div>		
+				<div class="column-two">
+					<label for="userinfo_city">City:</label>
+					<select id="userinfo_city" name="city">
+					</select> 
+				</div>
+				<div class="column-three">
+					<label for="userinfo_zip">Zip:</label>
+					<input type="text" id="userinfo_zip" name="zip"></input>
+				</div>
+				<div class="column-four">
+					<label for="userinfo_phone">Phone:</label>
+					<input type="text" id="userinfo_phone" name="phone"></input>
+				</div>
+			
+			</fieldset>
+			<fieldset>
+				 <legend>Other Information:</legend>
+				 Countries Visited:</br>
+				 <div class="column-one">
+					 <select multiple id='listBox1' class="listselect">
+						  <option value="ajax">USA</option>
+						  <option value="jquery">China</option>
+						  <option value="javascript">Japan</option>
+					</select>
+				</div>
+				<div class="column-two">
+					  <input type="button" id="btnRight" value ="  Add  "/>
+					  <br/><input type="button" id="btnLeft" value ="  Remove  "/>
+				</div>
+				<div  class="column-four">
+					<select multiple id='listBox2' class="listselect">
+					</select>
+				 </div>
+			</fieldset>
+			<fieldset>
+				<div  class="column-left">&nbsp;</div>
+				<div id="userinfo_submit" class="column-center">				
+					<button id="btnSubmit">Submit</button>
+					<button id="btnCancel">Cancel</button>
+				</div>
+				<div  class="column-right">&nbsp;</div>
+			</fieldset>
+						
+			<div><p id="resultName">&nbsp;</p></div>
+			<div><p id="resultAddress">&nbsp;</p></figure>
+			<div><p id="resultCityStateZip">&nbsp;</p></div>
+		
+		</div>
+	</body>
+</html>
+
+      
+    
+
