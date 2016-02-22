@@ -34,8 +34,8 @@ $(document).ready(function() {
 		} 
 		else if (id == 'IL') {
 			var newOptions = {
-				'IL-1' : 'IL1' ,
-                'IL-2' : 'IL2' ,
+				'Chicago' : 'IL' ,
+                'Evanston' : 'IL' ,
             }; 
 		}
 		$.each(newOptions, function(text, key) {
