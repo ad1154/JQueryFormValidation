@@ -28,14 +28,14 @@ $(document).ready(function() {
 		$('#userinfo_city').find('option').remove();
 		if (id == 'CA') {
 			var newOptions = {
-				'San Diego' : 'CA' ,
-                'Los Angeles' : 'CA' ,
+				'San Diego' : 'San Diego' ,
+                'Los Angeles' : 'Los Angeles' ,
             }; 
 		} 
 		else if (id == 'IL') {
 			var newOptions = {
-				'Chicago' : 'IL' ,
-                'Evanston' : 'IL' ,
+				'Chicago' : 'Chicago' ,
+                'Evanston' : 'Evanston' ,
             }; 
 		}
 		$.each(newOptions, function(text, key) {
